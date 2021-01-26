@@ -1,9 +1,9 @@
 module memory(
-	input [31:0] addr,
-	input [31:0] write_data,
+	input clk,
 	input ctrl_mem_write,
 	input ctrl_mem_read,
-	input clk,
+	input [31:0] addr,
+	input [31:0] write_data,
 	output reg [31:0] read_data
 );
 

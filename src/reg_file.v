@@ -1,10 +1,10 @@
 module reg_file(
+	input clk,
+	input ctrl_regwrite,
 	input [4:0] read1_w,
 	input [4:0] read2_w,
 	input [4:0] write_w,
 	input [31:0] write_data_w,
-	input clk,
-	input ctrl_regwrite,
 	output reg [31:0] reg1_r,
 	output reg [31:0] reg2_r
 );
